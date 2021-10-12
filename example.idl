@@ -1,0 +1,13 @@
+#ifndef _EXAMPLE_IDL_
+#define _EXAMPLE_IDL_
+
+module EXAMPLE {
+
+	// TODO define interfaces and data types here
+	interface SampleInterface {
+	    string echo(in string msg);
+	};
+	
+};
+
+#endif
