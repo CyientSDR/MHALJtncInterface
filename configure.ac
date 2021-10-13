@@ -21,6 +21,9 @@ AC_LANG_PUSH([C++])
 PKG_CHECK_MODULES([OMNIORB], [omniORB4 >= 4.1.0])
 PKG_CHECK_MODULES([OSSIE], [ossie >= 2.0.0])
 
+PKG_CHECK_MODULES([PROJECTDEPS], [ossie >= 2.0 omniORB4 >= 4.1.0])
+PKG_CHECK_MODULES([INTERFACEDEPS], [bulkio >= 2.0])
+
 # If you depend on other IDL modules, such as CF or BULKIO add them here
 # PKG_CHECK_MODULES([BULKIO], [bulkioInterfaces >= 2.0.0])
 # AC_CHECK_PYMODULE(bulkio.bulkioInterfaces, [], [AC_MSG_ERROR([the python bulkio.bulkioInterfaces module is required])])
